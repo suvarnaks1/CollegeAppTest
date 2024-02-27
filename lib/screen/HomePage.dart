@@ -36,7 +36,7 @@ class HomePage extends StatelessWidget {
                   var country = snapshot.data![index].country;
                   var url = snapshot.data![index].webPages;
                   var countryCode = snapshot.data![index].alphaTwoCode;
-                  var province = snapshot.data![index].stateProvince ?? "";
+                  var province = snapshot.data![index].stateProvince ?? "no province data";
                   var domain = snapshot.data![index].domains;
                   return _buildCard(collegeName, country, url[0], context,
                       index, countryCode, province, domain[0]);
